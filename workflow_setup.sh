@@ -5,11 +5,8 @@
 # this is a good resource for getting set up with most of what you need to start rna-seq analysis
 curl http://data.biostarhandbook.com/install.sh | bash
 
-# this is for setting up git remote repo
-conda install -y -c conda-forge ncbi-datasets-cli
-conda install -y -c conda-forge gh
-conda install -y -c conda-forge parallel
-conda install -y -c bioconda agat
+# the bioinfo env should have all of these
+mamba install -y ncbi-datasets-cli gh parallel agat pigz unzip
 
 # creating folders for s1 script
 mkdir genome
